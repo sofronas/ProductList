@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/showmorebtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rid"
+        android:layout_width="401dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/showmorebnt"
+            android:layout_width="162dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toEndOf="@+id/logo_product"
+            android:text="@string/products_show_more_btn" />
+
+        <ImageView
+            android:id="@+id/logo_product"
+            android:layout_width="107dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="23dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/description_textView"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/title_textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="31dp"
+            android:layout_toEndOf="@+id/logo_product" />
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="31dp"
+            android:layout_toEndOf="@+id/logo_product"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
